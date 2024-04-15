@@ -8,10 +8,9 @@ html {
 }
 
 body {
-    display: flex;
+    height: 100%;
     width: calc(100vw - 345px);
     max-width: 1050px;
-    height: auto;
     margin: auto;
 }
 
@@ -25,17 +24,24 @@ section {
     margin: 0 0 15px 0;
 }
 
+aside#dados {
+    min-height: 100vh;
+    float: left;
+    position: sticky;
+    width: 380px;
+    background-color: var(--cor-aside);
+    border-left: 35px solid var(--cor-tema);
+    border-radius: 8px 0 0 8px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
+}
+
 article.dados-pessoais {
     display: block;
 }
 
-aside#dados {
-    width: 345px;
-    background-color: var(--cor-aside);
-    border-left: 35px solid var(--cor-tema);
-    border-radius: 8px 0 0 8px;
-    padding: 10px 0 10px 10px;
-    margin: 10px 0 10px 0;
+article.competencias {
+    display: block;
 }
 
 div.perfil {
@@ -62,7 +68,7 @@ div.icone-dados {
 }
 
 div.qrcode {
-    display: flex;
+    display: none;
 }
 
 img.qrcode {
@@ -103,17 +109,13 @@ h2 {
     text-align: left;
 }
 
-article.competencias {
-    display: block;
-}
-
 svg {
     margin: 0 3px 0 3px;
 }
 
 }
 
-@media screen and (min-width: 940px) and (max-width: 1249px) {
+@media screen and (min-width: 960px) and (max-width: 1249px) {
 /* Configuração para Tablet */
 
 html {
@@ -195,6 +197,7 @@ span {
     text-align: end;
     color: var(--cor-tema);
     font-weight: bold;
+    margin: 0;
 }
 
 hr {
@@ -223,3 +226,4 @@ svg {
 }
 
 }
+

@@ -82,7 +82,7 @@ span {
     font-size: 0.96em;
     font-weight: bold;
     color: var(--cor-tema);
-    margin: 10px 0 10px 0;
+    margin: 0;
 }
 
 p.experiencia {
