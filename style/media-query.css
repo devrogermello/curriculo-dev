@@ -1,43 +1,36 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 1201px) {
 /* Configuração para Desktop */
 
 .container {
-    height: auto;
-    overflow: hidden;
-    width: calc(100vw - 380px);
+    display: flex;
     max-width: 1000px;
     margin: auto;
-    position: relative;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 main {
-    float: right;
     width: 600px;
-    padding: 5px;
+    padding: 10px;
 }
 
 section {
-    width: auto;
     margin: 0 0 15px 0;
 }
 
 aside#dados {
-    position: absolute;
-    width: 360px;
+    width: 350px;
     height: 98%;
     background-color: var(--cor-aside);
     border-left: 35px solid var(--cor-tema);
     border-radius: 8px 0 0 8px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0 480px 10px;
     margin: 10px 0 10px 0;
 }
 
-article.dados-pessoais {
-    display: block;
-}
-
+article.dados-pessoais,
 article.competencias {
     display: block;
 }
@@ -88,6 +81,7 @@ span {
     text-align: end;
     color: var(--cor-tema);
     font-weight: bold;
+    margin: 0;
 }
 
 hr {
@@ -103,7 +97,11 @@ h1 {
     text-align: left;
 }
 
-h2 {
+h2#dev {
+    text-align: left;
+}
+
+li {
     text-align: left;
 }
 
@@ -111,21 +109,18 @@ svg {
     margin: 0 3px 0 3px;
 }
 
+.compet {
+    display: none;
 }
 
-@media screen and (min-width: 960px) and (max-width: 1249px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
 /* Configuração para Tablet */
 
-html {
-    width: 97vw;
-}
-
-body {
-    display: flex;
-    width: calc(100vw - 345px);
-    max-width: 1050px;
-    height: auto;
-    margin: auto;
+div.container {
+    width: 60vw;
+    min-width: 620px;
 }
 
 main {
@@ -211,7 +206,7 @@ h1 {
     text-align: left;
 }
 
-h2 {
+h2#dev {
     text-align: left;
 }
 
@@ -222,6 +217,14 @@ article.competencias {
 svg {
     margin: 0 3px 0 3px;
 }
+
+}
+
+@media print {
+
+    h2#print {
+        margin-top: 60px;
+    }
 
 }
 

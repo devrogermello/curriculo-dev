@@ -37,15 +37,15 @@ ul {
 }
 
 li {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
-    margin: 7px 0 7px 0;
+    margin: 15px 0 7px 0;
     list-style-type:  '\2714\00A0\00A0';
     list-style-position: inside;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.05em;
     font-weight: normal;
     text-align: justify;
     color: var(--cor-tema);
@@ -76,7 +76,8 @@ span {
     font-size: 0.96em;
     font-weight: bold;
     color: var(--cor-tema);
-    margin: 0;
+    margin: 5px 0 0 0;
+    text-indent: 10px;
 }
 
 p.experiencia {
@@ -84,6 +85,18 @@ p.experiencia {
     text-align: justify;
     text-indent: 1em;
     line-height: 1.5em;
+}
+
+ul.soft {
+    list-style-position: inside;
+    columns: 2;
+    margin: 0 15px;
+}
+
+li.soft {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
 }
 
 article.dados-pessoais {
