@@ -68,7 +68,7 @@ p.perfil {
 }
 
 hr {
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
 }
 
 span {
@@ -104,5 +104,9 @@ article.dados-pessoais {
 }
 
 article.competencias {
+    display: none;
+}
+
+section.sect_links {
     display: none;
 }
