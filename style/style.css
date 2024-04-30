@@ -110,3 +110,21 @@ article.competencias {
 section.sect_links {
     display: none;
 }
+
+div.icone-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    border-bottom: 30px solid var(--cor-tema);
+    border-radius: 8px;
+}
+
+img.icone {
+    height: 30px;
+    width: auto;
+    image-rendering: pixelated;
+    margin: 10px 10px 10px 0;    
+}
